@@ -1,0 +1,81 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: radial-gradient(closest-side, wheat 1%, skyblue);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+#game {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.contestant {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 1px;
+    width: 100%;
+}
+.carry-object {width:100%;}
+#pc { height: 10%; width: 10%; margin-inline: auto;}
+#player_image { 
+    height: 10%; 
+    width: 10%;
+    margin-inline: auto;
+    border-radius: 100%; 
+}
+p {
+    margin-inline: auto;
+}
+#play {
+    font-size: xx-large;
+    margin-inline: 100%;
+    background-color:wheat;
+    border-radius: 10px 20px;
+    font-style: italic;
+    font-weight: bold;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) and (min-width: 601px) {
+    .contestant {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 301px) {
+    .contestant {
+        width: 40%;
+        font-size: medium;
+        flex-direction: column;
+    }
+    #pc, #player_image {
+        height: 20%; width: 20%;
+    }
+    #play { 
+        font-size: medium;
+        font-weight: normal;
+        margin-inline: 100%;
+    }
+}
+@media screen and (max-width: 300px) and (min-width: 201px) {
+    .contestant {
+        width: 30%;
+        font-size: small;
+        flex-direction: column;
+    }
+    #pc, #player_image {
+        height: 80%; width: 100%;
+    }
+    #play {
+        font-size: medium;
+        font-weight: normal;
+        margin-inline: 100%;
+    }
+}
